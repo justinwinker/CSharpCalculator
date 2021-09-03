@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace CSharpCalculator
 {
     partial class FrmCalculator
@@ -332,12 +334,13 @@ namespace CSharpCalculator
             this.richTextBox1.Location = new System.Drawing.Point(18, 32);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.richTextBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.richTextBox1.Size = new System.Drawing.Size(322, 78);
             this.richTextBox1.TabIndex = 25;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBox1.SelectionAlignment = HorizontalAlignment.Right;
             // 
             // textBox1
             // 
